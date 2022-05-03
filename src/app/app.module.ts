@@ -11,9 +11,16 @@ import { SelectedSpaceComponent } from './selected-space/selected-space.componen
 import { FinalPageComponent } from './final-page/final-page.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+    MatSliderModule,
+  ],
   declarations: [
     AppComponent,
     HelloComponent,
