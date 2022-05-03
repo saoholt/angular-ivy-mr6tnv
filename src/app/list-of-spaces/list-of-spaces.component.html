@@ -1,13 +1,14 @@
-<table>
+<table style="    font-size: 30px;">
   <thead></thead>
   <tbody>
     <tr
       *ngFor="let space of spaces"
       (click)="selectSpace(space.id)"
       [routerLink]="['/selected', space.id]"
+      class="tablerow" 
     >
       <td>
-        <span *ngIf="space.available" class="availability frei" >frei</span
+        <span *ngIf="space.available" class="availability frei">frei</span
         ><span *ngIf="!space.available" class="availability belegt"
           >belegt</span
         >
