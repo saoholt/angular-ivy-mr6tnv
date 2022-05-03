@@ -1,1 +1,14 @@
-<p>list-of-spaces works! dennis</p>
+<table>
+  <thead></thead>
+  <tbody>
+    <tr *ngFor="let space of spaces">
+      <td>
+        <span *ngIf="space.available" class="availability frei">frei</span
+        ><span *ngIf="!space.available" class="availability belegt"
+          >belegt</span
+        >
+      </td>
+      <td>{{ space.adress }}</td>
+    </tr>
+  </tbody>
+</table>

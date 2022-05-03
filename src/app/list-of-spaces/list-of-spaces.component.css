@@ -1,0 +1,10 @@
+.availability {
+}
+
+.availability.frei {
+  color: green;
+}
+
+.availability.belegt {
+  color: red;
+}
