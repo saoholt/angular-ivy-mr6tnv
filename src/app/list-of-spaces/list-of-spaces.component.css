@@ -10,4 +10,6 @@
 }
 
 .tablerow {
+  border: 1px solid white;
+  margin-bottom: 1rem;
 }
