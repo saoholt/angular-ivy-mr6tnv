@@ -9,8 +9,7 @@ import { BackendServiceService, space } from '../backend-service.service';
 export class ListOfSpacesComponent implements OnInit {
   spaces: space[];
 
-  constructor(private backendservice: BackendServiceService) {
-  }
+  constructor(private backendservice: BackendServiceService) {}
 
   ngOnInit() {
     this.spaces = this.backendservice.loadSpaces();

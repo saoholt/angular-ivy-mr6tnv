@@ -10,7 +10,6 @@ import { ListOfSpacesComponent } from './list-of-spaces/list-of-spaces.component
 import { SelectedSpaceComponent } from './selected-space/selected-space.component';
 import { FinalPageComponent } from './final-page/final-page.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { BackendServiceService } from './backend-service.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
