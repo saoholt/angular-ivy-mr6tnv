@@ -1,9 +1,13 @@
 <table>
   <thead></thead>
   <tbody>
-    <tr *ngFor="let space of spaces">
+    <tr
+      *ngFor="let space of spaces"
+      (click)="selectSpace(space.id)"
+      [routerLink]="['/selected', space.id]"
+    >
       <td>
-        <span *ngIf="space.available" class="availability frei">frei</span
+        <span *ngIf="space.available" class="availability frei" >frei</span
         ><span *ngIf="!space.available" class="availability belegt"
           >belegt</span
         >
