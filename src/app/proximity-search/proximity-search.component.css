@@ -1,9 +1,13 @@
 .FindButton {
-  border-radius: 50%;
+  border-radius: 30%;
   background-color: green;
-  line-height: 2em;
+  line-height: 1em;
   color: white;
   font-weight: normal;
+
+  font-size: 3em;
+  padding: 1rem;
+  width: 80%;
 }
 
 .dot {
