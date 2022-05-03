@@ -1,22 +1,24 @@
 <div style="display:flex;justify-content:center;margin-top:2rem;">
-<table style=" ">
-<thead></thead>
-<tbody>
-  <tr
-    *ngFor="let space of spaces"
-    (click)="selectSpace(space.id)"
-    [routerLink]="['/selected', space.id]"
-    class="tablerow" 
-  >
-    <td>
-      <span *ngIf="space.available" class="availability frei">frei</span
-      ><span *ngIf="!space.available" class="availability belegt"
-        >belegt</span
-      >
-    </td>
-    <td>{{ space.adress }}</td>
-  </tr>
-</tbody>
+<table style="    font-size: 30px;">
+  <thead></thead>
+  <tbody>
+    <tr
+      *ngFor="let space of spaces"
+      (click)="selectSpace(space.id)"
+      [routerLink]="['/selected', space.id]"
+      class="tablerow"
+    >
+      <td>
+        <span *ngIf="space.occupied == '1.0'" class="availability belegt"
+          >belegt</span
+        ><span *ngIf="space.occupied == '0.0'" class="availability frei"
+          >frei</span
+        >
+      </td>
+      <td>{{ space.adress }}</td>
+    </tr>
+  </tbody>
+  </div>
 </table>
 </div>
 

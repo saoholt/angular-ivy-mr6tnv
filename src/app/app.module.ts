@@ -12,8 +12,16 @@ import { FinalPageComponent } from './final-page/final-page.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
+
+
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    HttpClientModule,
+  ],
+
   declarations: [
     AppComponent,
     HelloComponent,
