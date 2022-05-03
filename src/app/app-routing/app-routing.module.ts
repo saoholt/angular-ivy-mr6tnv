@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'startpage', component: StartpageComponent },
   { path: 'proxy', component: ProximitySearchComponent },
   { path: 'list', component: ListOfSpacesComponent },
-  { path: 'selected', component: SelectedSpaceComponent },
+  { path: 'selected/:id', component: SelectedSpaceComponent },
   { path: 'final', component: FinalPageComponent },
   { path: '', redirectTo: '/startpage', pathMatch: 'full' },
 ];

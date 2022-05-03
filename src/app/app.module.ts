@@ -10,10 +10,10 @@ import { ListOfSpacesComponent } from './list-of-spaces/list-of-spaces.component
 import { SelectedSpaceComponent } from './selected-space/selected-space.component';
 import { FinalPageComponent } from './final-page/final-page.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   declarations: [
     AppComponent,
     HelloComponent,
